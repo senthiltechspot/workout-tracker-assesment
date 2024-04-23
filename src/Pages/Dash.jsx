@@ -21,10 +21,11 @@ const Dash = () => {
     return <WorkoutSchedule handleClose={handleClose} />;
   }
   return (
-    <div className="flex flex-col gap-7 min-h-[100vh] w-[100vw] px-5 pt-5">
+    <div className="flex flex-col gap-5 min-h-[100vh] w-[100vw] px-5 pt-5">
       <TopNav title={"Workout Tracker"} />
       <Graph handleOpen={handleOpen} />
       <InfoBar />
+      <button onClick={handleOpen} className="bg-[#8CB1FF] text-white font-bold py-2 px-4 rounded-full">Schedule Workout</button>
       <Upcomming />
       <TrainInfo />
     </div>
