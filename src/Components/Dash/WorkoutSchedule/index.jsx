@@ -4,7 +4,7 @@ import Calendar from "./Calendar";
 
 const WorkoutSchedule = ({ handleClose }) => {
   return (
-    <div className="flex flex-col gap-7 min-h-[100vh] w-[100vw] px-5 pt-5">
+    <div className="flex flex-col gap-7 min-h-[100vh] w-[100vw] px-5 pt-5 mt-10">
       <TopNav title={"Workout Schedule"} onBack={handleClose} />
       <Calendar />
     </div>
